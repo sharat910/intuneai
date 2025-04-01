@@ -1,71 +1,46 @@
-import Link from "next/link";
+import Image from "next/image";
+import { Mail, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="py-12 border-t border-border/40">
+    <footer className="py-8 border-t border-border/40">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-lg font-bold mb-4">
-              In<span className="text-accent">Tune</span> AI
-            </h3>
-            <p className="text-muted-foreground">
-              Tailored intelligence that resonates with your needs.
+        <div className="flex flex-col items-center space-y-6">
+          <div className="flex flex-col items-center">
+            <Image 
+              src="/icons/intuneai_logo_h.svg" 
+              alt="InTune AI Logo" 
+              width={160} 
+              height={40}
+            />
+            <p className="mt-2 text-sm text-muted-foreground">
+              Transforming Businesses with Tailored Intelligence
             </p>
           </div>
           
-          <div>
-            <h3 className="text-lg font-bold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-accent">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-accent">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-accent">
-                  Blog
-                </Link>
-              </li>
-            </ul>
+          <div className="flex items-center space-x-4">
+            <a 
+              href="mailto:hello@intuneai.com.au" 
+              className="text-muted-foreground hover:text-accent flex items-center gap-2"
+            >
+              <Mail size={18} />
+              hello@intuneai.com.au
+            </a>
+            <span className="text-muted-foreground">•</span>
+            <a 
+              href="https://linkedin.com/company/intune-ai" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-accent flex items-center gap-2"
+            >
+              <Linkedin size={18} />
+              LinkedIn
+            </a>
           </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">Legal</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-accent">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-accent">
-                  Terms of Service
-                </Link>
-              </li>
-            </ul>
+
+          <div className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} InTune AI. All rights reserved.
           </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">Contact</h3>
-            <ul className="space-y-2">
-              <li className="text-muted-foreground">
-                hello@intuneai.com
-              </li>
-              <li className="text-muted-foreground">
-                +1 (555) 123-4567
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} InTune AI. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,8 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/layout/Hero";
-import { Clients } from "@/components/layout/Clients";
 import { Services } from "@/components/layout/Services";
-import { HowWeWork } from "@/components/layout/HowWeWork";
+import { Engagement } from "@/components/layout/Engagement";
 import { SuccessStories } from "@/components/layout/SuccessStories";
 import { FAQ } from "@/components/layout/FAQ";
 import { CTA } from "@/components/layout/CTA";
@@ -14,9 +13,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Clients />
         <Services />
-        <HowWeWork />
+        <Engagement />
         <SuccessStories />
         <FAQ />
         <CTA />

@@ -129,34 +129,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --accent: #0096A9;
-    --accent-foreground: #ffffff;
-    
-    --card: #171717;
-    --card-foreground: #ededed;
-    
-    --primary: #ededed;
-    --primary-foreground: #171717;
-    
-    --secondary: #262626;
-    --secondary-foreground: #ededed;
-    
-    --muted: #262626;
-    --muted-foreground: #a3a3a3;
-    
-    --destructive: #ef4444;
-    --destructive-foreground: #ffffff;
-    
-    --border: #262626;
-    --input: #262626;
-    --ring: #0096A9;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -179,4 +151,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 1280px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

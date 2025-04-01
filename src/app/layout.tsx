@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "InTune AI | Tailored Intelligence That Resonates",
-  description: "Empowering businesses to unlock transformative growth with tailored AI solutions.",
+  title: "InTune AI | Tailored Intelligence For Your Business",
+  description: "Helping businesses grow with AI.",
   keywords: ["AI consulting", "artificial intelligence", "machine learning", "business intelligence", "AI strategy"],
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="light">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
