@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useRef } from "react";
@@ -33,7 +33,7 @@ export function Engagement() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   
   return (
-    <section id="engagement" className="py-24">
+    <section id="engagement" className="py-20">
       <div className="container">
         <motion.div 
           ref={ref}
@@ -98,8 +98,10 @@ export function Engagement() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-6 h-auto text-lg rounded-full">
-            Schedule Your Free Consultation Now
+          <Button className="bg-accent hover:bg-accent/90 text-white px-6 py-3 h-auto text-md rounded">
+            <Link href="https://cal.mixmax.com/intuneai/initial-chat" target="_blank" rel="noopener noreferrer">
+              Schedule Your Initial Chat Now
+            </Link>
           </Button>
         </motion.div>
       </div>

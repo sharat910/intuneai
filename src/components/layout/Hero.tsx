@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 const testimonial = {
   quote: "InTune AI revolutionized our accounting workflows by integrating AI tools that automated our disconnected systems. Their custom integrations reduced manual data entry by 90% and helped double our client capacity.",
   author: "Sri",
@@ -45,7 +45,9 @@ export function Hero() {
           <div className="relative inline-block">
             <div className="absolute -inset-3 bg-accent/10 blur-lg rounded-lg"></div>
             <Button className="relative bg-accent hover:bg-accent/90 text-white px-8 py-6 h-12 text-lg font-medium">
-              Book Your Free Consultation Today
+              <Link href="https://cal.mixmax.com/intuneai/initial-chat" target="_blank" rel="noopener noreferrer">
+                Book Your Free Consultation Today
+              </Link>
             </Button>
           </div>
         </div>

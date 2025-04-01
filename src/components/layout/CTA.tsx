@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 export function CTA() {
   return (
     <section className="py-20 bg-accent text-white">
@@ -11,8 +11,10 @@ export function CTA() {
           <p className="text-xl mb-8 text-white/80">
             Take the first step toward smarter, more efficient operations. Let InTune AI guide you through the possibilities of artificial intelligence.
           </p>
-          <Button className="bg-white text-accent hover:bg-white/90 px-8 py-6 h-auto text-lg">
-            Book Your Free Consultation
+          <Button className="bg-white text-accent hover:bg-white/90 px-6 py-4 h-auto text-lg">
+            <Link href="https://cal.mixmax.com/intuneai/initial-chat" target="_blank" rel="noopener noreferrer">
+              Book Your Free Consultation
+            </Link>
           </Button>
         </div>
       </div>
