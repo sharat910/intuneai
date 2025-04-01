@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "InTune AI | Tailored Intelligence For Your Business",
-  description: "Helping businesses grow with AI.",
-  keywords: ["AI consulting", "artificial intelligence", "machine learning", "business intelligence", "AI strategy"],
+  title: "InTune AI",
+  description: "Transforming Businesses with Tailored Intelligence.",
+  keywords: ["AI consulting", "artificial intelligence", "machine learning", "business intelligence", "AI strategy", "AI agents"],
 };
 
 export default function RootLayout({
