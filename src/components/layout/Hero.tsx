@@ -46,7 +46,7 @@ export function Hero() {
             <div className="absolute -inset-3 bg-accent/10 blur-lg rounded-lg"></div>
             <Button className="relative bg-accent hover:bg-accent/90 text-white px-8 py-6 h-12 text-lg font-medium">
               <Link href="https://cal.mixmax.com/intuneai/initial-chat" target="_blank" rel="noopener noreferrer">
-                Book Your Free Consultation Today
+                Discover What AI Can Do For You
               </Link>
             </Button>
           </div>
