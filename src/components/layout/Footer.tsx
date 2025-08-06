@@ -14,7 +14,8 @@ export function Footer() {
               height={40}
             />
             <p className="mt-2 text-sm text-muted-foreground">
-              Transforming Businesses with Tailored Intelligence
+              We build helpful AI products 
+              {/* Transforming Businesses with Tailored Intelligence */}
             </p>
           </div>
           
