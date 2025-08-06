@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 export function StealthHero() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [{ r }, api] = useSpring(() => ({
+  const [{ r }] = useSpring(() => ({
     r: 0,
     config: {
       mass: 1,
