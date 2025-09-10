@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 const testimonial = {
-  quote: "InTune AI revolutionized our accounting workflows by integrating AI tools that automated our disconnected systems. Their custom integrations reduced manual data entry by 90% and helped double our client capacity.",
+  quote: "InTune AI helped automate our accounting workflows by integrating AI tools which gave back time to our team and helped increase our client capacity.",
   author: "Sri",
   role: "OzLedger",
   link: "https://www.ozledger.com.au"
@@ -24,7 +24,7 @@ export function Hero() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               AI That&apos;s <span className="text-accent">In Tune</span> With Your<br />Business Goals
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground/90 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground/90 max-w-4xl mx-auto">
               Empowering businesses to unlock transformative growth with tailored AI solutions.
             </p>
           </div>
