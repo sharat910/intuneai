@@ -6,6 +6,7 @@ import { Services } from "@/components/layout/Services";
 import { Engagement } from "@/components/layout/Engagement";
 import { SuccessStories } from "@/components/layout/SuccessStories";
 import { CTA } from "@/components/layout/CTA";
+import { FAQ } from "@/components/layout/FAQ";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Engagement />
         <SuccessStories />
         <CTA />
+        <FAQ />
       </main>
       <Footer />
     </div>
